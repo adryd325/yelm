@@ -1,0 +1,50 @@
+/*
+ * ADRYD LARGE GUILD ICON
+ * BY: Adryd
+ */
+ .guilds-wrapper .guilds .guild:nth-of-type(4) {
+  width: 105px;
+}
+
+.guilds-wrapper .guilds .guild:nth-of-type(4) .guild-inner {
+  background: linear-gradient(270deg, #92fe9d, #00c9ff);
+  background-size: 200% 200%;
+  animation: gradientAnim 25s ease infinite;
+}
+
+
+.guilds-wrapper .guilds .guild:nth-of-type(4) .guild-inner a {
+  width: 100%;
+  background-image: url('https://adryd.com/logo.svg') !important;
+  background-size: 95px 35px;
+  background-position: center;
+  background-repeat: no-repeat
+}
+
+@keyframes gradientAnim {
+  0% {
+    background-position: 0 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  to {
+    background-position: 0 50%
+  }
+}
+
+/* fix for double guilds list read icons (only works if guild is at top of guilds list)  */
+.guilds-wrapper .guilds .guild.unread:nth-of-type(even)::before {
+  z-index: 9000;
+  left: 55px
+}
+
+.guilds-wrapper .guilds .guild.unread:nth-of-type(odd)::before {
+  z-index: 9000;
+  left: -15px;
+}
+
+.guilds-wrapper .guilds .guild.unread:nth-of-type(4)::before {
+  z-index: 9000;
+  left: -15px;
+}

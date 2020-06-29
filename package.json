@@ -1,0 +1,20 @@
+{
+  "name": "yelm",
+  "version": "0.0.0",
+  "description": "A patcher for Discord's official client.",
+  "main": "src/yelm.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "[redacted], adryd <me@adryd.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "standard": "^10.0.3"
+  },
+  "dependencies": {
+    "js-beautify": "^1.7.4",
+    "minimist": "^1.2.0",
+    "npmlog": "^4.1.2",
+    "snekfetch": "^3.5.2"
+  }
+}

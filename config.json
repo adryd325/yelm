@@ -1,0 +1,12 @@
+{
+  "patchFor": "canary",
+  "watchFor": ["canary", "ptb", "stable"],
+  "host": "discordapp.com",
+  "pollingRate": 30000,
+  "lastReleaseFile": "./data/lastRelease",
+  "webhooks": [{
+    "id": "ID",
+    "token": "TOKEN",
+    "channels": ["canary", "ptb", "stable"]
+  }]
+}

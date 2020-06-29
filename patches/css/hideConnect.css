@@ -1,0 +1,16 @@
+/* 
+ * HIDE CONNECT SCREEN
+ * For bot clients / litecord patch
+ * By: Adryd
+ */
+ .container-2oOGIt,
+ .content-3dsgDG,
+ .problems-2jwWfL,
+ .ready-2UbIdM,
+ .connecting,
+ .connecting-inner,
+ .connecting video.ready {
+   visibility: hidden !important;
+   display: none;
+ }
+ 

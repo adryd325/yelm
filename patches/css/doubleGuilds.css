@@ -1,0 +1,72 @@
+/*
+ * DOUBLE GUILDS LIST
+ * BY: Unknown
+ * Modified by: Adryd
+ */
+.guilds-wrapper {
+  width: 124px
+}
+
+.guilds-wrapper .scroller-wrap {
+  width: 139px
+}
+
+.guilds-wrapper .guilds {
+  display: flex;
+  flex-flow: row wrap;
+  padding-left: 0;
+  align-content: flex-start;
+}
+
+.guilds-wrapper .guilds .guild {
+  margin-left: 8px;
+  margin-top: 8px;
+}
+
+.guilds-wrapper .guilds .guild.unread:nth-of-type(odd)::before {
+  z-index: 9000;
+  left: 55px
+}
+
+.guilds-wrapper .guilds .guild.unread:nth-of-type(even)::before {
+  z-index: 9000;
+}
+
+.guilds-wrapper .guilds .guild:first-child {
+  position: relative;
+  left: 0;
+  margin: auto;
+}
+
+.guilds-wrapper .guilds .friends-online {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  margin-top: 5px;
+}
+
+.guilds-wrapper .guilds .guild-separator {
+  position: relative;
+  width: 128px;
+  margin-top: 10px;
+}
+
+.guilds-wrapper .guilds .guild.selected:before {
+  display: none;
+}
+
+.guilds-wrapper .guilds .guild {
+  position: relative;
+}
+
+.guilds-wrapper .guilds .dms {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.guilds-wrapper .guilds .dms .guild {
+  left: 0;
+  margin: 0;
+  margin-left: 8px;
+  margin-top: 8px;
+}
